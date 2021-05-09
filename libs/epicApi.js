@@ -1095,6 +1095,9 @@ function addAssetToProject(assetInfo, projectData, ondone, onerror, onprogress)
                 return onerror(err);
             }
             versions = getItemVersions(assetInfo);
+
+            // Show list supported versions
+            console.log('addAssetToProject versions', versions);
             
             if (!versions[projectVersion]) {
                 return onerror("Version " + projectVersion + " is not avaiable.");

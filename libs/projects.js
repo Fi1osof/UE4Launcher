@@ -29,7 +29,8 @@ function getProjectVersionFromEnginePath(name, projectPath, engines)
         }
     } catch (e) {console.error(e);}
     
-    return "";
+    // Default Engine version
+    return "4.26";
 }
 
 function findProjectFile(dir)
